@@ -1,0 +1,449 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+.material-icons {
+    cursor: pointer;
+}
+
+/*------------------ Header Starts--------------- */
+
+/*------------------ Navigation Starts--------------- */
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 12px 10px;
+    cursor: pointer;
+}
+
+.logo img {
+    height: 35px;
+    margin: 0 10px;
+}
+
+.leftNav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.searchBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchBar form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchBar form input {
+    height: 35px;
+    width: 40vw;
+    padding: 3px;
+    border: 2px solid black;
+    outline: none;
+}
+
+.searchBar form button {
+    height: 35px;
+    padding: 3px;
+    border: 2px solid black;
+    border-left: none;
+    outline: none;
+}
+
+.voice {
+    border: 2px solid black;
+    border-radius: 50%;
+    margin: 0 .5rem;
+    /* filter: invert(1); */
+}
+
+.rightNav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rightNav div {
+    margin: 0 10px;
+}
+
+.userMenu img {
+    height: 30px;
+    border-radius: 50%;
+}
+
+/*------------------ Navigation Ends--------------- */
+
+/*------------------ Header Ends--------------- */
+
+/*-----------------------Body------------------------ */
+.container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+/*------------------ Side Bar Starts--------------- */
+
+.sideBar {
+    height: 100vh;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 15vw;
+}
+
+.sideBar:hover {
+    overflow-y: scroll;
+}
+
+.sideBarContaion:hover {
+    background-color: rgb(210, 207, 207);
+}
+
+.home {
+    background-color: rgb(210, 207, 207);
+}
+/* -----------------------Top & Mid Icons------------------------ */
+.topIcons,
+.midIcons {
+    border-bottom: 1px solid #777;
+    padding-bottom: 15px;
+}
+
+.midIcons {
+    margin-top: 15px;
+}
+
+.sideBarContaion {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.sideBarContaion div {
+    margin-left: 8px;
+}
+
+.sideBarContaion p {
+    margin-left: 10px;
+}
+
+/*------------------ Side Bar Ends--------------- */
+
+/* -----------------------Main Container Starts------------------------ */
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    white-space: wrap;
+    width: 85vw;
+}
+
+/*------------------ Category Starts--------------- */
+.category {
+    border-top: 1px solid #777;
+    display: flex;
+    overflow: hidden;
+    overflow-x: scroll;
+}
+
+.category::-webkit-scrollbar {
+    display: none;
+}
+
+.categories {
+    margin: 20px 5px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.categories a {
+    margin: 1px;
+    text-decoration: none;
+    border: 2px solid gray;
+    border-radius: 20px;
+    padding: 5px 12px;
+    color: black;
+    transition: .5s;
+}
+
+#all a {
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+}
+
+.categories a:hover {
+    background-color: rgb(233, 233, 233);
+}
+
+/*------------------ Category Ends--------------- */
+
+/*------------------ Main Body Starts--------------- */
+
+.mainBody {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+    justify-items: center;
+    background-color: rgb(237, 233, 233);
+    border-top: 1px solid #777;
+}
+
+/* -----------------------Main Body Contain------------------------ */
+.contain {
+    margin: 15px 10px;
+    cursor: pointer;
+    width: 300px;
+}
+
+.contain a {
+    color: black;
+}
+
+.thumbnail img {
+    width: 300px;
+}
+
+.secondPart {
+    display: flex;
+}
+
+.title {
+    margin-left: 10px;
+    display: block;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.user img {
+    height: 30px;
+    border-radius: 50%;
+}
+
+.channelName {
+    color: #777;
+    font-size: .9em;
+}
+
+.name {
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.name:hover {
+    color: black;
+}
+
+/*------------------ Main Body Ends--------------- */
+
+/* ******************************************************************************** */
+
+/* -----------------------Video Main Body Starts------------------------ */
+.video-main-body {
+    display: flex;
+}
+
+/* -----------------------Video Section Starts------------------------ */
+.video-section {
+    width: 68%;
+    height: 100vh;
+    padding: 15px 10px;
+    margin-left: 2%;
+}
+
+.videoBar video {
+    width: 100%;
+}
+
+.tags a {
+    color: #3ea6ff;
+}
+
+/* -----------------------Video Details------------------------ */
+.video-details {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+
+.video-details h3 {
+    margin: 10px 0;
+}
+
+/* -----------------------Video Details Second------------------------ */
+.video-details-second {
+    display: flex;
+    justify-content: space-between;
+}
+
+.readMore {
+    padding: 3px 10px;
+    margin: 3px;
+    border: none;
+    background: none;
+    color: rgb(27, 0, 68);
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer; 
+}
+.readMore:hover{
+   color: rgb(58, 0, 0);
+}
+
+#more {
+    display: none;
+}
+
+/* -----------------------Video Icons------------------------ */
+.video-icons {
+    display: flex;
+    justify-content: end;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.video-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-icon samp {
+    margin: 10px 15px 0 4px;
+    cursor: pointer;
+}
+
+.video-icon p {
+    margin: 0 15px 0 4px;
+    cursor: pointer;
+}
+
+
+/* -----------------------Video Details Ends------------------------ */
+
+
+
+/* -----------------------Video Channel Name Starts------------------------*/
+
+.video-channel-name {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid #777;
+    border-radius: 5px;
+}
+
+.video-channel-name-first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 12px 8px;
+}
+
+.video-user {
+    cursor: pointer;
+}
+
+.video-user img {
+    height: 40px;
+}
+
+.video-channelName {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.paraSubscribe {
+    color: #777;
+    font-size: .8em;
+}
+
+.video-channel-name-second {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 12px 8px;
+}
+
+.subscribers-btn {
+    padding: 10px 12px;
+    background-color: #c00;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .5s;
+}
+.subscribers-btn:hover {
+    background-color: rgba(204, 0, 0, 0.847);
+}
+
+/* -----------------------Video Channel Name Enads------------------------*/
+
+.comments {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* -----------------------Video Section Ends------------------------ */
+
+
+
+/* -----------------------Video Side Bar Starts------------------------ */
+.video-sideBar {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-top: 15px;
+}
+
+.video-sidBar-conatin {
+    border-top: 1px solid #777;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.video-contain {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0 5px;
+    margin-top: 10px;
+}
+
+.video-thumbnail img {
+    height: 115px;
+}
+
+.vidieo-title a {
+    color: black;
+}
+
+.video-secondPart {
+    margin: 5px 8px;
+}
+
+/* -----------------------Video Side Bar Ends------------------------ */
+/* -----------------------Video Main Body Ends------------------------ */
